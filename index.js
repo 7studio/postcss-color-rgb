@@ -8,6 +8,7 @@ function parseRgbValues(str) {
     var depth = 0;
 
     str = str.trim();
+    str = str.replace(/\s+/g, ' ');
 
     for (var i =  0, length = str.length; i < length; i++) {
         var char = str[i];

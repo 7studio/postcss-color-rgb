@@ -79,3 +79,10 @@ it('supports complex RGB functions with attr()', () => {
         'a{ color: rgba(255, 0, 51, attr(data-alpha %, 100%)); }'
     );
 });
+
+it('supports complex RGB functions with multi-lines value', () => {
+    return run(
+        ':root{ --is-red: 0; } a{ background-color: rgb( \n\t\t  calc(255 * var(--is-red) + 0 * (1 - var(--is-red)))\n\t\t   calc(0 * var(--is-red) + 255 * (1 - var(--is-red))) \r\n\t\t0 \r\n\t\t / 1 ); }',
+        ':root{ --is-red: 0; } a{ background-color: rgba(calc(255 * var(--is-red) + 0 * (1 - var(--is-red))), calc(0 * var(--is-red) + 255 * (1 - var(--is-red))), 0, 1); }'
+    );
+});
