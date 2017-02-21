@@ -1,0 +1,41 @@
+{
+  "name": "postcss-color-rgb",
+  "version": "0.0.0",
+  "description": "PostCSS plugin to transform new RGB functions syntaxes to compatible CSS",
+  "keywords": [
+    "postcss",
+    "css",
+    "postcss-plugin",
+    "color",
+    "rgb"
+  ],
+  "author": "Xavier Zalawa <xavier@7studio.fr>",
+  "license": "MIT",
+  "repository": "7studio/postcss-color-rgb",
+  "bugs": {
+    "url": "https://github.com/7studio/postcss-color-rgb/issues"
+  },
+  "homepage": "https://github.com/7studio/postcss-color-rgb",
+  "dependencies": {
+    "postcss": "^5.2.6",
+    "postcss-message-helpers": "^2.0.0",
+    "reduce-function-call": "^1.0.2"
+  },
+  "devDependencies": {
+    "eslint": "^3.12.2",
+    "eslint-config-postcss": "^2.0.2",
+    "jest": "^18.0.0"
+  },
+  "scripts": {
+    "test": "jest && eslint *.js"
+  },
+  "jest": {
+    "verbose": true
+  },
+  "eslintConfig": {
+    "extends": "eslint-config-postcss/es5",
+    "env": {
+      "jest": true
+    }
+  }
+}
