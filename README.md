@@ -38,6 +38,11 @@ Find more information about these changes in ["CSS Function Syntaxes (color and 
 
 Checkout [tests](index.test.js) for more examples.
 
+## Installation
+
+I am not able to release this code to npm because [this plugin](https://www.npmjs.com/package/postcss-color-rgb) already exists and I don't want to name it `postcss-color-rgb2` :unamused:
+But I couldn't remove or close this repository as long as the "official" plugin does not handle correctly complex cases [#1](https://github.com/dmarchena/postcss-color-rgb/issues/1).
+
 ## Usage
 
 ```js
